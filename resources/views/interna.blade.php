@@ -13,12 +13,13 @@
         flex-wrap: nowrap;
     }
     .banner-principal{
+        border-radius: 0px 0px 0px 150px;
         background: url({{ asset('banner.png') }});
         background-position: center;
         background-size: cover;
         width: 100%;
-        border-bottom-left-radius: 250px;
-        height: 400px;
+        /*border-bottom-left-radius: 250px;*/
+        /*height: 400px;*/
         margin-bottom: 40px;
         position: relative;
         overflow: hidden;
@@ -41,7 +42,7 @@
     }
     .nav .banner-principal ul li{
         list-style: none;
-        margin: 20px 80px;
+        margin: 0px 80px;
         color: #ffffff;
         font-size: 20px;
 
@@ -64,6 +65,7 @@
         margin-left: 200px;
         z-index: 10;
         position: relative;
+        margin-top:60px;
     }
     .banner-principal .aporta{
         padding: 10px 50px;
@@ -74,6 +76,9 @@
         font-size: 25px;
         z-index: 10;
         position: relative;
+        display:block;
+        max-width:300px;
+        margin-bottom:80px;
     }
 
 

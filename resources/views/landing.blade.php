@@ -217,9 +217,12 @@ img{
     color: #ffffff;
     font-size: 25px;
 }
-.nav .banner-principal ul li a{
-    color: #ffffff;
+.nav .banner-principal ul li a{color: #ffffff;
     text-decoration: none;
+    z-index: 10;
+    position: relative;
+    letter-spacing: 5px;
+    font-size: 20px;
 }
 a:hover,  a:link{
     text-decoration: none;
@@ -281,7 +284,7 @@ footer div{
                         </div>
                         <div class="col-md-8 offset-md-2">
                             <div class="contenido">
-                                <h1 class="top-80 text-center white">Be helpful</h1>
+                                <h1 class="top-80 text-center white" style="font-size: 80px">Be helpful</h1>
                                 <p class="white text-center">la gran comunidad del mundo desde <br>que empezamos.</p>
                                 <a href="{{ route('interna') }}" class="help_button">Quiero ayudar</a>
                             </div>
@@ -303,17 +306,17 @@ footer div{
         <section id="tabs">
             <div class="row">
                 <div class="col-xs-12 col-md-4">
-                    <div class="box_item">
+                    <div class="box_item text-left" style="padding-left: 80px">
                         <div id="alerta" class="item text-center">
-                            <p>Alertas</p>
+                            <p class="text-left" style="font-size: 25px"><img style="max-width: 60px" src="campana.svg" alt="">Alertas</p>
                             <h2>Hay personas que te necesitan</h2>
                         </div>
                         <div id="campana" class="item text-center active">
-                            <p>Campañas</p>
-                            <h2>Hay personas que te necesitan</h2>
-                        </div>
+                                <p class="text-left" style="font-size: 25px"><img style="max-width: 60px" src="cohete.png" alt="">Campañas</p>
+                            <h5 class="white" style="">Hay personas que te necesitan</h5><br>
+                        </div><br>
                         <div id="comunidad" class="item text-center">
-                            <p>Comunidad</p>
+                                <p class="text-left" style="font-size: 25px"><img style="max-width: 60px" src="corazon.png" alt="">Comunidad</p>
                             <h2>Hay personas que te necesitan</h2>
                         </div>
                     </div>
