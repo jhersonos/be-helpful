@@ -257,16 +257,16 @@
             </div>
             <div class="barra">
                 <div>
-                    <img src="campana.svg" alt=""><br>
+                    <img src="icon1.png" alt=""><br>
                 </div>
                 <div>
-                    <img src="cohete.png" alt=""><br>
+                    <img src="manos.png" alt=""><br>
                 </div>
                 <div>
-                    <img src="cohete.png" alt=""><br>
+                    <img src="callend.png" alt=""><br>
                 </div>
                 <div>
-                    <img src="corazon.png" alt=""><br>
+                    <img src="point.png" alt=""><br>
                 </div>
             </div>
         </div>
