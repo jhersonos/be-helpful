@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+<body >
+<style>
+    .importe{
+        background: #ffffff;
+        width: 300px;
+        text-align: center;
+        webkit-box-shadow: 0px 0px 27px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 0px 27px 0px rgba(0,0,0,0.75);
+        box-shadow: 0px 0px 27px 0px rgba(0,0,0,0.75);
+    }
+    .importe .banner{
+        background: url('http://via.placeholder.com/300x100');
+        width: 100%;
+        height: 100px;
+        border-top-left-radius: 80px;
+    }
+    .importe .ticket{
+        background: rgb(68, 126, 237);
+        height: 90px;
+        margin: 20px 40px;
+        position: relative;
+    }
+    .importe .bol{
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background: #ffffff;
+        position: absolute;
+    }
+    .importe .bol:first-child{
+        top: 30px;
+        left: -15px;
+    }
+    .importe .bol:nth-child(2){
+        top: 30px;
+        right: -15px;
+    }
+    .importe img{
+        margin-top: 20px;
+    }
+    .importe h3{
+        font-size: 30px;
+        font-weight: lighter;
+        color: grey;
+        padding-top: 30px;
+        line-height: 0;
+        padding-right: 33px
+    }
+    .importe hr{
+        background: #ffffff;
+        height: 2px;
+        width: 80%;
+    }
+    .importe h4{
+        text-align: left;
+        padding-left: 30px;
+        padding-top: 40px;
+        line-height: .3;
+        font-size: 40px;
+        color: #ffffff;
+    }
+    
+    .donar{
+        width: 400px;
+        background: #ffffff;
+        webkit-box-shadow: 0px 0px 27px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 0px 27px 0px rgba(0,0,0,0.75);
+        box-shadow: 0px 0px 27px 0px rgba(0,0,0,0.75);
+        border-top-left-radius: 90px;
+        overflow: hidden;
+        position: relative;
+        color: grey;
+    }
+    .donar .titulo{
+        background: rgb(68, 126, 237);
+    }
+    .donar .titulo h2{
+        color: #ffffff;
+        font-size: 20px;
+        padding: 10px;
+    }
+    .donar .form{
+        padding: 20px
+    }
+    .donar .form input{
+        border: none;
+        border-radius: 20px;
+        background: red;
+        color: #ffffff;
+    }
+    .donar img{
+        width: 100%;
+        height: 50px;
+    }
+    .donar .botones{
+        display: flex;
+        justify-content: space-between;
+        padding: 20px
+    }
+    .donar .botones button{
+        width: 130px;
+        border-radius: 40px
+    }
+</style>
+<div class="container my-5 row">
+    <div class="col-md-6">
+            <div class="importe">
+                <h3 class="text-right">Importe:</h3>
+                <div class="ticket">
+                    <div class="bol"></div>
+                    <div class="bol"></div>
+                    <h4 class="monto">$</h4>
+                    <hr>
+                </div>
+        
+                <div class="banner"></div>
+                <img src="http://via.placeholder.com/100x50" alt="">
+            </div>
+    </div>
+    <div class="col-md-6">
+            <div class="donar">
+                <div class="titulo text-right"><h2>¿CUANTOS GRANITOS<br>QUIERES DONAR?</h2></div>
+                <div class="form">
+                    
+                <label class="form-label" for="text">N° de Tarjeta:</label>
+                <i class="far fa-credit-card"></i><input type="text" class="form-control" placeholder="N° de Tarjeta">
+
+                <div class="form-row">
+                    <div class="col">
+                        <label class="form-label" for="text">Caducidad:</label>
+                        <i class="fas fa-calendar-alt"></i><input type="text" class="form-control" placeholder="Mes">
+                    </div>
+                    <div class="col">
+                        <label style="visibility: hidden" class="form-label" for="text">.</label>
+                        <input type="text" class="form-control" placeholder="Ano">
+                    </div>
+                </div>
+
+                <label class="form-label" for="text">Codigo de seguridad:</label>
+                <i class="fas fa-lock"></i><input type="text" class="form-control" placeholder="Codigo de seguridad">
+            </div>
+            <img class="tarjetas" src="http://via.placeholder.com/100x50" alt="">
+            <div class="botones">
+                    <button style="background: gray; color: white;" class="btn">CANCELAR</button>
+                    <button style="background: rgb(68, 126, 237); color: white;" class="btn">PAGAR</button>
+            </div>
+        </div>
+    </div>
+</div>   
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>
